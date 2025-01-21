@@ -73,9 +73,3 @@ print(f'The least consumed food category is: {least_consumed_cat}\n')
 p_df = df.pivot(index='food_category', columns='country')
 print(p_df)
 
-## EXTRA
-# What country produces the most kg C02 per person per year? (same as 
-# previous question l. the way we answer the same data analysis 
-# question changes depending on the format of the data (wide vs long))
-
-print(p_df['co2_emmission'].sum().sort_values().tail(1))
